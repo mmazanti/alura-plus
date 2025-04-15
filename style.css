@@ -9,6 +9,7 @@
     --botao-azul: #167BF7;
     --cor-fundo: #00030C;
     --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
 }
 
 body {
@@ -52,6 +53,11 @@ body {
     margin-bottom: 1em;
 }
 
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-fundo);
+}
+
 .botao_secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
@@ -93,4 +99,59 @@ body {
 
 .container__descricao {
     padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+    margin: 0 8em;
+}
+
+.dispositivos__titulo {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.dispositivos__lista {
+    font-size: 2em;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 2.5em 0;
+}
+
+.rodape {
+    text-align: center;
+    margin: 6em 8em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight: 400;
+    margin: 2.5em 0;
+}
+
+.rodape .lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: var(--cinza-secundario);
+}
+
+.rodape__texto {
+    font-size: 0.8em;
+    color: var(--cinza-secundario);
+    margin: 1em 0;
 }
